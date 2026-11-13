@@ -179,7 +179,7 @@
                 <td id="res_date_en">-</td>
             </tr>
             <tr>
-                <td>বর্ষবন্ধন:</td>
+                <td>অর্থবছর:</td>
                 <td id="res_fiscal_bn">-</td>
                 <td>Fiscal Year</td>
                 <td id="res_fiscal_en">-</td>
@@ -247,19 +247,41 @@
 </div>
 
 <script>
-    // আপডেটকৃত নতুন তথ্যসহ সনদের ডাটাবেজ
+    // সনদের ডাটাবেজ (এখানে একে একে নতুন সনদ যুক্ত করতে পারবেন)
     const certificatesDatabase = {
-        "20260216067029": {
-            cert_bn: "২৫২৬০২১৬০৬৭০২৯",
+        "20260216064033": {
+            cert_bn: "২৫২৬০২১৬০৬৪০৩৩",
             cert_en: "20260216064033",
             date_bn: "১৬/২/২০২৬",
             date_en: "2/16/2026",
             fiscal_bn: "২০২৭-২০২৮",
             fiscal_en: "2027-2028",
-            expire_bn: "অত্র ট্রেড লাইসেন্স এর মেয়াদ ১লা জুলাই ২০২৭ ইং হইতে ৩০শে জুন ২০২৮ ইং তারিখ পর্যন্ত বলবৎ থাকিবে।",
-            expire_en: "Validity of this trade license: 1st July 2027 to 30th June 2028.",
+            expire_bn: "অত্র ট্রেড লাইসেন্স এর মেয়াদ ৩০শে জুন ২০২৭ ইং তারিখ পর্যন্ত বলবৎ থাকিবে।",
+            expire_en: "Validity of this trade license: 30th June 2027.",
             biz_bn: "মেমোরী ফ্রেম বি ডি",
             biz_en: "Memory Frame BD",
+            name_bn: "ইসতিয়াক জাহান মাহিন ভূইয়া",
+            name_en: "Istiake Jahan Mahin Bhuyan",
+            nid_bn: "৪৬৬০৩১১১২৯",
+            nid_en: "4660311129",
+            father_bn: "মোঃ পনির ভূইয়া",
+            father_en: "Md Ponir Bhuyan",
+            mother_bn: "নাজমা সুলতানা",
+            mother_en: "Nazma Sultana",
+            address_bn: "গ্রাম: মালিতা, রোড/ব্লক/সেক্টর: , বাসা/হোল্ডিং: , ওয়ার্ড নং: ০৬, ডাকঘর: চরসিন্দুর-১৬১২, পৌরসভা: চরসিন্দুর, উপজেলা: পলাশ, জেলা: নরসিংদী।",
+            address_en: "Village: Malita, Road/Block/Sector:, House/holding:, Ward No: 06, Post: Char Sindur, Purasabha:, Upazila: Palash, District: Narsingdi."
+        },
+        "20260216067029": {
+            cert_bn: "২০২৬০২১৬০৬৭০২৯",
+            cert_en: "20260216067029",
+            date_bn: "১৬/২/২০২৬",
+            date_en: "2/16/2026",
+            fiscal_bn: "২০২৭-২০২৮",
+            fiscal_en: "2027-2028",
+            expire_bn: "অত্র ট্রেড লাইসেন্স এর মেয়াদ ৩০শে জুন ২০২৭ ইং তারিখ পর্যন্ত বলবৎ থাকিবে।",
+            expire_en: "Validity of this trade license: 30th June 2027.",
+            biz_bn: "টেক এন্ড প্রিন্ট হাব",
+            biz_en: "Tech & Print Hub",
             name_bn: "ইসতিয়াক জাহান মাহিন ভূইয়া",
             name_en: "Istiake Jahan Mahin Bhuyan",
             nid_bn: "৪৬৬০৩১১১২৯",
@@ -288,7 +310,7 @@
 
         if (cert && certificatesDatabase[cert]) {
             document.getElementById('certificateNo').value = cert;
-            searchCertificate(); // লিংকে আসার সাথে সাথেই অটোমেটিক সার্চ হয়ে ফলাফল দেখাবে
+            searchCertificate(); 
         }
     };
 
